@@ -1,0 +1,35 @@
+{
+  "experiment_name": "qualitative_analysis_config",
+  
+  "model": {
+    "model_name": "Qwen/Qwen3-4B-Instruct-2507",
+    "confidence_token": "<CONFIDENCE>",
+    "torch_dtype": "bfloat16",
+    "device_map": "auto"
+  },
+
+  "data": {
+    "prm800k_path": "/workspace/datasets/PRM800K",
+    "reveal_path": "/workspace/datasets/reveal",
+    "eqasc_path": "/workspace/datasets/eQASC",
+    "prm800k_test_split": "test",
+    "reveal_test_split": "eval",
+    "eqasc_test_split": "test",
+    "max_length": 2048,
+    "max_steps_per_example": 10,
+    
+    "max_test_samples": 10000,
+    "use_prm800k": true,
+    "use_reveal": true,
+    "use_eqasc": true
+  },
+  
+  "training": {
+    "per_device_eval_batch_size": 1
+  },
+  
+  "eval": {
+    "max_eval_batches": null,
+    "save_predictions": true
+  }
+}

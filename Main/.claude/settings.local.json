@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bash:*)",
+      "Bash(pip3 install:*)",
+      "Bash(python3:*)",
+      "Bash(nvidia-smi:*)",
+      "Bash(env)",
+      "Bash(unset:*)",
+      "Bash(export CUDA_VISIBLE_DEVICES=0:*)",
+      "Bash(env -i HOME=\"$HOME\" PATH=\"$PATH\" LD_LIBRARY_PATH=\"/usr/local/cuda/lib64\" CUDA_VISIBLE_DEVICES=0 python3:*)",
+      "Bash(/usr/local/cuda/bin/nvcc:*)",
+      "Bash(pip3 uninstall:*)",
+      "Bash(/venv/main/bin/python:*)",
+      "Bash(/venv/main/bin/pip uninstall:*)",
+      "Bash(/venv/main/bin/pip install:*)",
+      "Bash(pip3:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
