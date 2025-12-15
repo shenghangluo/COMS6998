@@ -46,6 +46,11 @@ This documentation is organized into focused, purpose-specific guides:
 - **[Troubleshooting](troubleshooting.md)** - Common issues and solutions
 - **[Best Practices](best-practices.md)** - Recommended training strategies and optimization tips
 
+#### Experimental Documentation
+- **[Experimental Setup](experimental-setup.md)** - Hardware, software, and configuration details
+- **[Reproducibility Guide](reproducibility.md)** - Step-by-step instructions to reproduce results
+- **[Results](results.md)** - Experimental results and performance analysis
+
 ---
 
 ## Project Overview
